@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+.profile{
+    width: 256px;
+    height:256px;
+    background-image: url('images/profile2.png');
+    background-size: 150%;
+    background-position: 43% 20%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+</style>
+    </head>
+<body>
+    <div class="w-screen h-screen flex flex-col justify-center items-center">
+<div class=" flex flex-col items-center ">
+    <div class="profile">
+
+    </div>
+    
+<h1 class="text-2xl txt">มีไยหยอ???</h1>    
+</div>
+    </div>
+    <script>
+        const text=["มีไยหยอ???","ดีฮาฟฟฟุ","แอ๊ะมีคนแอบส่อง","อุ๊ยยยยย","อิอิ","ผมหล่อไมฮาฟฟฟฟฟุ"];
+        setInterval(()=>{
+            document.querySelector(".txt").textContent=text[Math.floor(Math.random()*text.length)]
+        },3000)
+    </script>
+</body>
+</html>
