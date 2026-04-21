@@ -17,11 +17,7 @@
             border-radius: 100%;
         }
 
-        /* .profile:hover{
-    background-size: 160%;
-    background-position: 43% 20%;
-    rotate: 10deg;
-} */
+
     </style>
 </head>
 
@@ -49,6 +45,9 @@
             profile.style.backgroundSize = "150%";
             profile.style.backgroundPosition = "43% 20%";
             profile.style.rotate = "0deg";
+        });
+         profile.addEventListener("click", () => {
+          window.open("https://portfolio.nargor.dev", "_blank");
         });
         const text = ["มีไยหยอ???", "ดีฮาฟฟฟุ", "แอ๊ะมีคนแอบส่อง", "อุ๊ยยยยย", "อิอิ", "ผมหล่อไมฮาฟฟฟฟฟุ"];
         setInterval(() => {
